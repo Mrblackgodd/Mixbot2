@@ -329,7 +329,6 @@ async def start(client, message):
                 ],[
                     InlineKeyboardButton("How To Verify", url="https://youtube.com/shorts/iZLpKqW88v4?si=qd-pS6E59iP5MYbc")
                 ]]
-                reply_markup = InlineKeyboardMarkup(buttons)
                 await message.reply_text(
                     text="<b>You are not verified !\nKindly verify to continue !</b>",
                     protect_content=True,
@@ -399,7 +398,6 @@ async def start(client, message):
                 ],[
                     InlineKeyboardButton("How To Verify", url="https://youtube.com/shorts/iZLpKqW88v4?si=qd-pS6E59iP5MYbc")
                 ]]
-                reply_markup = InlineKeyboardMarkup(buttons)
                 await message.reply_text(
                     text="<b>You are not verified !\nKindly verify to continue !</b>",
                     protect_content=True,
@@ -461,14 +459,13 @@ async def start(client, message):
     if not await check_verification(client, message.from_user.id) and VERIFY == True:
         btn = [[
             InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
-        ]]
-        btn = [[
+        ],[
                     InlineKeyboardButton("How To Verify", url="https://youtube.com/shorts/iZLpKqW88v4?si=qd-pS6E59iP5MYbc")
                 ]]
         await message.reply_text(
             text="<b>You are not verified !\nKindly verify to continue !</b>",
             protect_content=True,
-            reply_markup=InlineKeyboardMarkup(btn)
+            reply_markup=InlineKeyboardMarkup(buttons)
         )
         return
     msg = await client.send_cached_media(
