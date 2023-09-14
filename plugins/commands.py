@@ -333,7 +333,7 @@ async def start(client, message):
                 await message.reply_text(
                     text="<b>You are not verified !\nKindly verify to continue !</b>",
                     protect_content=True,
-                    reply_markup=InlineKeyboardMarkup(btn)
+                    reply_markup=InlineKeyboardMarkup(buttons)
                 )
                 return
             msg = await client.send_cached_media(
@@ -403,7 +403,7 @@ async def start(client, message):
                 await message.reply_text(
                     text="<b>You are not verified !\nKindly verify to continue !</b>",
                     protect_content=True,
-                    reply_markup=InlineKeyboardMarkup(btn)
+                    reply_markup=InlineKeyboardMarkup(buttons)
                 )
                 return
             msg = await client.send_cached_media(
