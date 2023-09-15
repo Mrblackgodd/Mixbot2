@@ -255,7 +255,7 @@ async def start(client, message):
         is_valid = await check_token(client, userid, token)
         if is_valid == True:
             await message.reply_text(
-                text=f"<b>Hey {message.from_user.mention}, You are successfully verified !\nNow you have unlimited access for all movies till today midnight.</b>",
+                text=f"<b>Hey {message.from_user.mention}, You are successfully verified !\nNow you have unlimited access for all movies till today midnight.please search again in group.</b>",
                 protect_content=True
             )
             await verify_user(client, userid, token)
@@ -330,7 +330,7 @@ async def start(client, message):
                     InlineKeyboardButton("How To Verify", url="https://youtube.com/shorts/iZLpKqW88v4?si=qd-pS6E59iP5MYbc")
                 ]]
                 await message.reply_text(
-                    text="<b>You are not verified !\nKindly verify to continue !</b>",
+                    text="<b>You are not verified !\nKindly verify to continue !,\nafter verification you become premium Member‼️</b>",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(buttons)
                 )
@@ -399,7 +399,7 @@ async def start(client, message):
                     InlineKeyboardButton("How To Verify", url="https://youtube.com/shorts/iZLpKqW88v4?si=qd-pS6E59iP5MYbc")
                 ]]
                 await message.reply_text(
-                    text="<b>You are not verified !\nKindly verify to continue !</b>",
+                    text="<b>You are not verified !\nKindly verify to continue !,\nafter verification you become a premium member‼️</b>",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(buttons)
                 )
@@ -424,7 +424,7 @@ async def start(client, message):
             )
             filetype = msg.media
             file = getattr(msg, filetype.value)
-            title = '@Filmycloud_Movies  ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
+            title = '@psycobotz  ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
             size=get_size(file.file_size)
             f_caption = f"<code>{title}</code>"
             if CUSTOM_FILE_CAPTION:
@@ -463,7 +463,7 @@ async def start(client, message):
             InlineKeyboardButton("How To Verify", url="https://youtube.com/shorts/iZLpKqW88v4?si=qd-pS6E59iP5MYbc")
                 ]]
         await message.reply_text(
-            text="<b>You are not verified !\nKindly verify to continue !</b>",
+            text="<b>You are not verified !\nKindly verify to continue !,\nafter verification you become a premium member‼️</b>",
             protect_content=True,
             reply_markup=InlineKeyboardMarkup(buttons)
         )
