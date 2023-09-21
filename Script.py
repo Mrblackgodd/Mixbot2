@@ -1,8 +1,6 @@
 class script(object):
     START_TXT = """<b>Hᴇʟʟᴏ {},
-    If you search movies in our 𝙥𝙧𝙚𝙢𝙞𝙪𝙢 𝙂𝙧𝙤𝙪𝙥 you'll get direct file, but in pm you get stream/downloadable link
-<a href=https://t.me/verifiedpsyco=qd-pS6E59iP5MYbc/67>𝗣𝗥𝗘𝗠𝗜𝗨𝗠 𝗚𝗥𝗢𝗨𝗣</a>
-ᴅᴏɴᴇ 🆗</b>"""
+    If you search movies in our 𝙥𝙧𝙚𝙢𝙞𝙪𝙢 𝙂𝙧𝙤𝙪𝙥 you'll get direct file, but in pm you get stream/downloadable link</b>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
