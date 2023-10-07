@@ -246,7 +246,7 @@ async def start(client, message):
                     InlineKeyboardButton("❤ SEARCH HERE ❤", url="https://t.me/+nNxrEiZPumNlMjBl")
                 ]]
             await message.reply_text(
-                text=f"<b>Hey {message.from_user.mention}, You are successfully verified !\nNow you have unlimited access for all movies till today midnight.please search here👇👇 Or again in your group</b>",
+                text=f"<b>Hey {message.from_user.mention}, ✅You are successfully verified✅ !\nNow you have unlimited access for all movies till today midnight.please search here👇👇 Or again in your group</b>",
                 protect_content=True, 
                 reply_markup=InlineKeyboardMarkup(btn)
             )
@@ -317,12 +317,12 @@ async def start(client, message):
                 f_caption = f"{' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files1.file_name.split()))}"
             if not await check_verification(client, message.from_user.id) and VERIFY == True:
                 buttons = [[
-                    InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+                    InlineKeyboardButton("👉 Verify Yourself 👈", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                 ],[
-                    InlineKeyboardButton("How To Verify", url="https://youtube.com/shorts/iZLpKqW88v4?si=qd-pS6E59iP5MYbc")
+                    InlineKeyboardButton("🛑 How To Verify 🛑", url="https://youtube.com/shorts/iZLpKqW88v4?si=qd-pS6E59iP5MYbc")
                 ]]
                 await message.reply_text(
-                    text="<b>You are not verified !\nKindly verify to continue !,\nafter verification you become premium Member‼️</b>",
+                    text="<b>‼️ PLEASE VERIFY ‼️\n\n You are not verified !\nKindly verify to continue !,\nafter verification you get all Movies without any prblm ‼️</b>",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(buttons)
                 )
@@ -383,12 +383,12 @@ async def start(client, message):
         try:
             if not await check_verification(client, message.from_user.id) and VERIFY == True:
                 buttons = [[
-                    InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+                    InlineKeyboardButton("👉 Verify Yourself 👈", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                 ],[
-                    InlineKeyboardButton("How To Verify", url="https://youtube.com/shorts/iZLpKqW88v4?si=qd-pS6E59iP5MYbc")
+                    InlineKeyboardButton("🛑 How To Verify 🛑", url="https://youtube.com/shorts/iZLpKqW88v4?si=qd-pS6E59iP5MYbc")
                 ]]
                 await message.reply_text(
-                    text="<b>You are not verified !\nKindly verify to continue !,\nafter verification you become a premium member‼️</b>",
+                    text="<b>‼️ PLEASE VERIFY ‼️\n\nYou are not verified !\nKindly verify to continue !,\nafter verification you get all Movies without any prblm ‼️</b>",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(buttons)
                 )
@@ -444,12 +444,12 @@ async def start(client, message):
         f_caption = f"@psycobotz  {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))}"
     if not await check_verification(client, message.from_user.id) and VERIFY == True:
         buttons = [[
-            InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
+            InlineKeyboardButton("👉 Verify Yourself 👈", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
         ],[ 
-            InlineKeyboardButton("How To Verify", url="https://youtube.com/shorts/iZLpKqW88v4?si=qd-pS6E59iP5MYbc")
+            InlineKeyboardButton("🛑 How To Verify 🛑", url="https://youtube.com/shorts/iZLpKqW88v4?si=qd-pS6E59iP5MYbc")
                 ]]
         await message.reply_text(
-            text="<b>You are not verified !\nKindly verify to continue !,\nafter verification you become a premium member‼️</b>",
+            text="<b>‼️ PLEASE VERIFY ‼️\n\nYou are not verified !\nKindly verify to continue !,\nafter verification you get all movies without any prblm‼️</b>",
             protect_content=True,
             reply_markup=InlineKeyboardMarkup(buttons)
         )
