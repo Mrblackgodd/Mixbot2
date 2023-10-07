@@ -243,10 +243,10 @@ async def start(client, message):
         is_valid = await check_token(client, userid, token)
         if is_valid == True:
             btn = [[
-                    InlineKeyboardButton("🎬 Premium Group 🎬", url="https://t.me/+nNxrEiZPumNlMjBl")
+                    InlineKeyboardButton("❤ SEARCH HERE ❤", url="https://t.me/+nNxrEiZPumNlMjBl")
                 ]]
             await message.reply_text(
-                text=f"<b>Hey {message.from_user.mention}, You are successfully verified !\nNow you have unlimited access for all movies till today midnight.please search again in 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 𝗚𝗿𝗼𝘂𝗽 \n unlimited access only in premium group.</b>",
+                text=f"<b>Hey {message.from_user.mention}, You are successfully verified !\nNow you have unlimited access for all movies till today midnight.please search here👇👇 Or again in your group</b>",
                 protect_content=True, 
                 reply_markup=InlineKeyboardMarkup(btn)
             )
