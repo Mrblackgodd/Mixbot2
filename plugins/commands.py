@@ -467,7 +467,7 @@ async def start(client, message):
     return   
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
-async def channel_info(bot, message:
+async def channel_info(bot, message):
            
     """Send basic information of channel"""
     if isinstance(CHANNELS, (int, str)):
