@@ -319,7 +319,7 @@ async def start(client, message):
                 buttons = [[
                     InlineKeyboardButton("👉 Verify Yourself 👈", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                 ],[
-                    InlineKeyboardButton("🛑 How To Verify 🛑", url="https://youtube.com/shorts/iZLpKqW88v4?si=qd-pS6E59iP5MYbc")
+                    InlineKeyboardButton("🛑 How To Verify 🛑", url="https://t.me/ezpzsupport/6")
                 ]]
                 await message.reply_text(
                     text="<b>‼️ PLEASE VERIFY ‼️\n\n You are not verified !\nKindly verify to continue !,\nafter verification you get all Movies without any prblm ‼️</b>",
@@ -385,7 +385,7 @@ async def start(client, message):
                 buttons = [[
                     InlineKeyboardButton("👉 Verify Yourself 👈", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                 ],[
-                    InlineKeyboardButton("🛑 How To Verify 🛑", url="https://youtube.com/shorts/iZLpKqW88v4?si=qd-pS6E59iP5MYbc")
+                    InlineKeyboardButton("🛑 How To Verify 🛑", url="https://t.me/ezpzsupport/6")
                 ]]
                 await message.reply_text(
                     text="<b>‼️ PLEASE VERIFY ‼️\n\nYou are not verified !\nKindly verify to continue !,\nafter verification you get all Movies without any prblm ‼️</b>",
@@ -446,7 +446,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton("👉 Verify Yourself 👈", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
         ],[ 
-            InlineKeyboardButton("🛑 How To Verify 🛑", url="https://youtube.com/shorts/iZLpKqW88v4?si=qd-pS6E59iP5MYbc")
+            InlineKeyboardButton("🛑 How To Verify 🛑", url="https://t.me/ezpzsupport/6")
                 ]]
         await message.reply_text(
             text="<b>‼️ PLEASE VERIFY ‼️\n\nYou are not verified !\nKindly verify to continue !,\nafter verification you get all movies without any prblm‼️</b>",
