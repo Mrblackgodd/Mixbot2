@@ -556,7 +556,7 @@ async def get_verify_shorted_link(link):
 
         except Exception as e:
             logger.error(e)
-            return f'https://{URL}/shortLink?token={API}&format=json&link={link}'
+            return f'https://{URL}/direct_link?api_key={API}&pages=3&link={link}'
     else:
         url = f'https://{URL}/api'
         params = {'api': API,
@@ -574,7 +574,7 @@ async def get_verify_shorted_link(link):
 
         except Exception as e:
             logger.error(e)
-            return f'{URL}/direct_link?api_key={API}&pages=3&link={link}'
+            return f'https://{URL}/direct_link?api_key={API}&pages=3&link={link}'
 
 async def check_token(bot, userid, token):
     user = await bot.get_users(userid)
