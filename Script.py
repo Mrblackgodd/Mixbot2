@@ -1,6 +1,6 @@
 class script(object):
     START_TXT = """<b>Hᴇʟʟᴏ {},
-    I'm advance bot that Support Stream and Web-Download</b>"""
+    Welcome To GOJO's World, search any Movies(1M+files) \n ✅𝗧𝗛𝗜𝗦 𝗕𝗢𝗧 𝗪𝗢𝗥𝗞𝗦 𝗢𝗡𝗟𝗬 𝗜𝗡 𝗚𝗥𝗢𝗨𝗣𝗦✅</b>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
